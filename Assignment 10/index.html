@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web3 Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Rock Paper Scissors – Web3 Edition</h1>
+  </header>
+
+  <div class="wallet-box">
+    <button id="connectBtn">Connect Wallet</button>
+    <p id="walletAddress"></p>
+  </div>
+
+  <div class="score-board">
+    <div id="user-label" class="badge">user</div>
+    <div id="computer-label" class="badge">comp</div>
+    <span id="user-score">0</span>:<span id="computer-score">0</span>
+  </div>
+
+  <div class="result">
+    <p>Make your move.</p>
+  </div>
+
+  <div class="choices">
+    <div class="choice" id="r"><img src="images/rock.jpg" alt="Rock"></div>
+    <div class="choice" id="p"><img src="images/paper.jpg" alt="Paper"></div>
+    <div class="choice" id="s"><img src="images/scissors.jpg" alt="Scissors"></div>
+  </div>
+
+  <p id="action-msg">Click to play. Each round is a blockchain transaction.</p>
+  
+  <!-- Load Ethers.js FIRST -->
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+<!-- Then load your app.js -->
+<script src="app.js"></script>
+
+</body>
+</html>
